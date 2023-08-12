@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.light_theme {
+    --header-background-color: #EFF7FA;
+    --background-color: #F1F2F5;
+    --text-color: black;
+    --body-text-color: black;
+    --main-container-text-color: black;
+}
+.dark_theme {
+    --header-background-color: #18191A;
+    --background-color: #242526;
+    --text-color: white;
+    --body-text-color: white;
+    --main-container-text-color: white;
+}
+.marine_theme {
+    --header-background-color: #0056B8;
+    --background-color: #97D2FB;
+    --text-color: #EDCCE2;
+    --body-text-color: darkblue;
+    --main-container-text-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App */
+
+.app {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+    color: var(--main-container-text-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ThemeSwitcher */
+
+.theme-btn {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px ;
 }
 
-.App-link {
-  color: #61dafb;
+.theme-switcher {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-background-color);
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 5px solid #fff;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    margin: 0 0.5rem 0 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* FormMaker */
+
+.form-maker-container {
+    display: flex;
+    text-align: center;
+    color: var(--body-text-color);
+}
+.form-elements {
+    cursor: move;
+}
+.form-elements:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.form-maker-listgroup {
+    width: 200px;
+}
+.drop-panel {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    border: dashed #32a1ce;
+    max-height: 245px;
+}
+
+/* Forms */
+
+.forms-container {
+    text-align: center;
+    color: var(--body-text-color);
+}
+
+/* Samples */
+
+.samples-container {
+    text-align: center;
+    color: var(--body-text-color);
 }

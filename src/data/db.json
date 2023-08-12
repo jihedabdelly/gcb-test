@@ -1,0 +1,45 @@
+{
+  "forms": [
+    {
+      "id": 1,
+      "name": "hardcoded example form",
+      "elements": [
+        {
+          "id": 1,
+          "label": "Text",
+          "type": "text"
+        },
+        {
+          "id": 2,
+          "label": "Number",
+          "type": "number"
+        },
+        {
+          "id": 3,
+          "label": "Email",
+          "type": "email"
+        },
+        {
+          "id": 4,
+          "label": "Text Option List",
+          "type": "text option list",
+          "options": [
+            "option1",
+            "option2",
+            "option3"
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Date Picker",
+          "type": "date picker"
+        },
+        {
+          "id": 6,
+          "label": "File Input",
+          "type": "file input"
+        }
+      ]
+    }
+  ]
+}

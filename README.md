@@ -1,3 +1,20 @@
+# GCB tech assessement
+Dynamic Form Builder and Renderer
+
+## Installation and Setup
+1/ install dependencies `npm install`
+2/ start the application `npm run start` and open [http://localhost:3000]
+3/ on another terminal, start the json local db `npm run db` (json file is accessible here [http://localhost:3500/forms])
+
+### Usage
+* On home page, you'll create a new form by drag and drop'ing the needed elements(which are generic at this point). On submit you'll be redirected to `/forms` where you'll see a table of all created forms.
+* On `/forms` path you'll be able to view, edit and delete the forms.
+* When clicking the [edit] button of a form, you'll get redirected where you can update all form's elements.
+* Data is stored in a json file, which can be viewed on `/jsondb`.
+* Three possible themes are available: light, dark and marine.
+
+#### #### #### #### #### #### ####
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
